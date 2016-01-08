@@ -1,0 +1,2 @@
+# soundcloud-vue
+gulp build

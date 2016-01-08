@@ -1,0 +1,61 @@
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Example</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+    <script src="./dist/app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-4">
+    <my-search>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for..." v-on:click="search">
+              <span class="input-group-btn">
+                <button class="btn btn-default search" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+              </span>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="panel-body results row">
+        <span>Nothing to do yet..</span><br>
+        </div>
+        <div class="panel-footer">
+        <button class="btn btn-default nextresult pull-left hidden" type="button"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></button>
+        <button class="btn btn-default lists" type="button"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></button>
+        <button class="btn btn-default blocks" type="button"><span class="glyphicon glyphicon-th" aria-hidden="true"></span></button>
+        </div>
+    </div>
+    </my-search>
+    </div>
+    <div class="col-md-4">
+    <div class="panel panel-default">
+    <div class="panel-body content">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/300px-No_image_available.svg.png" class="img-responsive img-thumbnail center-block">
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="panel panel-default">
+    <div class="panel-heading">Recent searches</div>
+    <div class="panel-body history">
+        <span>No recent searches</span><br>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>
